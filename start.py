@@ -238,15 +238,15 @@ def UrlFixer(original_url):
     elif original_url[:8] == "https://":
         url = original_url[8:]
         protocol = "https"
-  #  tmp = url.split("/")
-   # website = tmp[0]
-  #  check = website.split(":")
-  #  if len(check) != 1:
- #       port = int(check[1])
+    tmp = url.split("/")
+    website = tmp[0]
+    check = website.split(":")
+    if len(check) != 1:
+        port = int(check[1])
     else:
         if protocol == "https":
             port = 443
-   # target = check[0]
+    target = check[0]
    # if len(tmp) > 1:
    #     path = url.replace(website, "", 1)
 
